@@ -1,8 +1,5 @@
-<?xml version="1.0" encoding="utf-8" ?>
-<Project
-  Name="Demo"
-  Path="Demo"
-  Type="Console">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project Name="Demo" Path="Demo" Type="Console">
   <References>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -10,6 +7,10 @@
     <Reference Include="MonoGame.Framework" />
   </References>
   <Files>
+    <Compile Include="DemoGame.cs" />
     <Compile Include="Program.cs" />
+    <None Include="index.htm">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </Files>
 </Project>
